@@ -22,4 +22,35 @@
         android:summary="@string/global_actions_advanced_reboot_summary"
         android:defaultValue="true" />
 
+
+<PreferenceCategory
+    android:key="monet_category"
+    android:title="Monet">
+
+
+<com.cygnus.spaceship.preferences.SecureSettingSwitchPreference
+        android:key="monet_engine_custom_color"
+        android:title="@string/monet_engine_custom_color_title"
+        android:summary="@string/monet_engine_custom_color_summary"
+        android:defaultValue="false" />
+
+<net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="monet_engine_color_override"
+        android:title="@string/monet_engine_color_override_title"
+        android:dependency="monet_engine_custom_color"
+        android:defaultValue="0xffffff" />
+
+<com.cygnus.spaceship.preferences.SecureSettingSwitchPreference
+        android:key="monet_engine_accurate_shades"
+        android:title="@string/monet_engine_accurate_shades_title"
+        android:defaultValue="true" />
+
+<com.cygnus.spaceship.preferences.SecureSettingSwitchPreference
+        android:key="monet_engine_linear_lightness"
+        android:title="@string/monet_engine_linear_lightness_title"
+        android:defaultValue="false" />
+
+</PreferenceCategory>
+
+
 </PreferenceScreen>

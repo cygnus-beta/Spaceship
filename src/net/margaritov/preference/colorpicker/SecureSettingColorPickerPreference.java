@@ -20,7 +20,7 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.provider.Settings;
 
-import com.cherish.settings.preferences.SecureSettingsStore;
+import com.cygnus.spaceship.preferences.SecureSettingsStore;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
